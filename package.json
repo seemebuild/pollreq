@@ -1,0 +1,21 @@
+{
+  "name": "pollreq",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:web": "pnpm --filter web dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0",
+    "@types/node": "^24.0.0",
+    "turbo": "^2.5.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
