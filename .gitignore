@@ -2,6 +2,17 @@ node_modules
 .pnpm-store
 .next
 .turbo
+.agents
+.claude
+AGENTS.md
+CLAUDE.md
+skills-lock.json
+apps/web/.agents
+apps/web/.claude
+apps/web/AGENTS.md
+apps/web/CLAUDE.md
+apps/web/skills-lock.json
+apps/web/convex
 dist
 coverage
 playwright-report
@@ -11,5 +22,7 @@ test-results
 .env.*.local
 convex/.env.local
 convex/_generated
+convex/**/*.js
+convex/**/*.js.map
 *.tsbuildinfo
 .DS_Store

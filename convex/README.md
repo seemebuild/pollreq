@@ -12,8 +12,10 @@ Initial scope:
 
 Auth setup notes:
 
-- Run `pnpm exec convex dev` to initialize Convex and generate `convex/_generated/*`
-- Run `pnpm exec auth generate --config ./convex/betterAuth/auth.ts --output ./convex/betterAuth/schema.ts` after the Better Auth config is in place
+- Run `pnpm run convex:dev` from the repo root to initialize Convex and generate `convex/_generated/*`
+- Run `pnpm run auth:generate` after the Better Auth config is in place
 - Set `BETTER_AUTH_SECRET` and `SITE_URL` through Convex env
+- The root Convex scripts read deployment values from `apps/web/.env.local`
+- The Better Auth generator runs from `convex/betterAuth` and overwrites `schema.ts`
 
-After dependencies are installed, run `pnpm exec convex dev` from the repo root or wire a dedicated script to generate the `_generated` files.
+After dependencies are installed, run `pnpm run convex:dev` from the repo root or wire a dedicated script to generate the `_generated` files.
