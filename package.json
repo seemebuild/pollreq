@@ -4,12 +4,20 @@
   "packageManager": "pnpm@10.33.0",
   "scripts": {
     "build": "turbo run build",
+    "convex:codegen": "pnpm exec convex codegen --env-file ./apps/web/.env.local",
+    "convex:dev": "pnpm exec convex dev --env-file ./apps/web/.env.local",
     "dev": "turbo run dev",
     "dev:web": "pnpm --filter web dev",
+    "auth:generate": "cd convex/betterAuth && pnpm dlx @better-auth/cli@latest generate -y",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
     "typecheck": "turbo run typecheck"
+  },
+  "dependencies": {
+    "@convex-dev/better-auth": "^0.11.0",
+    "better-auth": "~1.5.0",
+    "convex": "^1.25.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.54.0",
