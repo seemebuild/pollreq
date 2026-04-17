@@ -14,14 +14,14 @@ Priority guide:
 - [x] Scaffold `apps/web` with Next.js
 - [x] Add Convex to the monorepo and configure the backend workspace
 - [x] Choose the initial authentication approach
-- [ ] Wire up the initial authentication approach
+- [x] Wire up the initial authentication approach
 - [x] Set up the testing stack for TDD from day one
 - [x] Add CI checks for linting, typechecking, and tests
 - [x] Define the Convex schema for users, workspaces, polls, options, and responses
-- [ ] Implement auth-protected workspace access rules
+- [x] Implement auth-protected workspace access rules
 - [x] Build the landing page shell
 - [ ] Build sign up and sign in flows
-- [ ] Build workspace onboarding
+- [x] Build workspace onboarding
 - [x] Build the initial poll draft editor for one-question polls
 - [ ] Build poll creation for one-question polls with persistence
 - [x] Support single-choice, multiple-choice, rating, and open feedback poll types in the draft editor
@@ -32,8 +32,9 @@ Priority guide:
 - [ ] Support optional respondent name, email, and reference fields
 - [ ] Store responses in Convex
 - [ ] Build the creator dashboard
+- [x] Build the initial authenticated dashboard shell
 - [ ] Show total responses, response breakdowns, and recent submissions
-- [ ] Add authorization tests for protected data access
+- [x] Add unit coverage for workspace onboarding and dashboard authorization states
 - [ ] Add end-to-end coverage for sign in, poll creation, publishing, and response submission
 - [x] Add unit tests for shared poll rules and the poll draft editor
 
