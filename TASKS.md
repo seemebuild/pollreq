@@ -23,11 +23,11 @@ Priority guide:
 - [ ] Build sign up and sign in flows
 - [x] Build workspace onboarding
 - [x] Build the initial poll draft editor for one-question polls
-- [ ] Build poll creation for one-question polls with persistence
+- [x] Build poll creation for one-question polls with persistence
 - [x] Support single-choice, multiple-choice, rating, and open feedback poll types in the draft editor
-- [ ] Build poll draft, publish, and close states
-- [ ] Generate public poll links
-- [ ] Build the public poll response page
+- [x] Build poll draft, publish, and close states
+- [x] Generate public poll links
+- [x] Build the public poll response page
 - [ ] Allow anonymous responses by default
 - [ ] Support optional respondent name, email, and reference fields
 - [ ] Store responses in Convex

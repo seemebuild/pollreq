@@ -6,6 +6,13 @@ type WorkspaceApi = {
     getViewerWorkspace: FunctionReference<"query">;
     createWorkspace: FunctionReference<"mutation">;
   };
+  polls: {
+    listWorkspacePolls: FunctionReference<"query">;
+    getPublicPollBySlug: FunctionReference<"query">;
+    createPollDraft: FunctionReference<"mutation">;
+    publishPoll: FunctionReference<"mutation">;
+    closePoll: FunctionReference<"mutation">;
+  };
 };
 
 export const api = anyApi as unknown as WorkspaceApi;

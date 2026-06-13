@@ -65,8 +65,8 @@ export function DashboardShell() {
           Your workspace is ready for the first poll.
         </h1>
         <p className="hero-copy">
-          This dashboard is now connected to authenticated workspace data. The next build slice can focus
-          on saving poll drafts into Convex for this business.
+          This dashboard is now connected to authenticated workspace data, and your poll builder can
+          persist drafts into Convex for this business.
         </p>
         <div className="stats-row" aria-label="Workspace details">
           <div className="stat-pill">

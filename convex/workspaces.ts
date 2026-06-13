@@ -13,7 +13,7 @@ async function requireIdentity(ctx: QueryCtx | MutationCtx) {
 
 async function ensureUser(ctx: MutationCtx) {
   const identity = await requireIdentity(ctx);
-  const authUserId = identity.subject;
+  const authUserId = identity.tokenIdentifier;
   const existingUser = await ctx.db
     .query("users")
     .withIndex("by_auth_user_id", (q) => q.eq("authUserId", authUserId))
@@ -53,7 +53,7 @@ export const getViewerWorkspace = query({
 
     const user = await ctx.db
       .query("users")
-      .withIndex("by_auth_user_id", (q) => q.eq("authUserId", identity.subject))
+      .withIndex("by_auth_user_id", (q) => q.eq("authUserId", identity.tokenIdentifier))
       .unique();
 
     if (!user) {
